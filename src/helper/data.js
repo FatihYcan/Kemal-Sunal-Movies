@@ -2,7 +2,7 @@ export const movies = [
   {
     id: 1,
     name: "Canım Kardeşim",
-    category: "Dram",
+    category: "Drama",
     year: "1973",
     date: "(1 Mart 1973)",
     duration: "90 dakika",
