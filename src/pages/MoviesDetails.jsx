@@ -14,18 +14,15 @@ const MoviesDetails = () => {
   const [movie, setMovie] = useState(null);
   const [error, setError] = useState(false);
 
-useEffect(() => {
-  const selectedMovie = movies.find((movie) => movie.id === parseInt(id));
+  useEffect(() => {
+    const selectedMovie = movies.find((movie) => movie.id === parseInt(id));
 
-  if (selectedMovie) {
-    setMovie(selectedMovie);
-  } else {
-    setError(true);
-    // Hata durumunda neden sayfaya yönlendirme yapamadığınıza dair bir hata ayıklama ekleyin
-    console.error(`Movie with id ${id} not found.`);
-    navigate("/"); // Hata durumunda ana sayfaya yönlendir
-  }
-}, [id, navigate]);
+    if (selectedMovie) {
+      setMovie(selectedMovie);
+    } else {
+      setError(true);
+    }
+  }, [id]);
 
   if (error) {
     return <NotFound />;
