@@ -1,9 +1,10 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import MoviesDetails from "./pages/MoviesDetails";
-import NotFound from "./pages/NotFound";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
