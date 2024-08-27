@@ -2,7 +2,7 @@ export const movies = [
   {
     id: 1,
     name: "Canım Kardeşim",
-    category: "Dram",
+    category: "Drama",
     year: "1973",
     date: "(1 Mart 1973)",
     duration: "90 dakika",
@@ -80,7 +80,7 @@ export const movies = [
   {
     id: 4,
     name: "Hababam Sınıfı Sınıfta Kaldı",
-    category: ["Komedi", "Dram"],
+    category: ["Komedi", "Drama"],
     year: "1976",
     date: "(1 Ocak 1976)",
     duration: "90 dakika",
@@ -133,7 +133,7 @@ export const movies = [
   {
     id: 6,
     name: "Hababam Sınıfı Uyanıyor",
-    category: ["Komedi", "Dram"],
+    category: ["Komedi", "Drama"],
     year: "1976",
     date: "(1976)",
     duration: "95 dakika",
@@ -185,7 +185,7 @@ export const movies = [
   {
     id: 8,
     name: "Hababam Sınıfı Tatilde",
-    category: ["Komedi", "Dram"],
+    category: ["Komedi", "Drama"],
     year: "1977",
     date: "(1977)",
     duration: "95 dakika",
@@ -280,7 +280,7 @@ export const movies = [
     id: 12,
     name: "Garip",
 
-    category: ["Komedi", "Dram"],
+    category: ["Komedi", "Drama"],
     year: "1986",
     date: "(1986)",
     duration: "96 dakika",

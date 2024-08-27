@@ -12,7 +12,6 @@ const MoviesList = () => {
 
   const handleCategoryChange = (e) => {
     const selectedCategoryValue = e.target.value.toLowerCase();
-
     setSelectedCategory(
       selectedCategoryValue === "film türünü seçiniz"
         ? null
@@ -22,13 +21,12 @@ const MoviesList = () => {
 
   const handleYearChange = (e) => {
     const selectedYearValue = e.target.value;
-
     setSelectedYear(
       selectedYearValue.toLowerCase() === "film yılını seçiniz"
         ? null
         : selectedYearValue
     );
-
+    // Eğer film yılını seçiniz seçilirse, kategori seçimini koru
     if (selectedYearValue.toLowerCase() === "film yılını seçiniz") {
       setSelectedCategory(selectedCategory);
     }
@@ -47,8 +45,6 @@ const MoviesList = () => {
         onChange={(e) => setValue(e.target.value)}
         value={value}
       />
-
-      {/* d-flex justify-content-around */}
 
       <Form.Group className="mt-3 form-group">
         <Form.Select
@@ -78,9 +74,10 @@ const MoviesList = () => {
           ))}
         </Form.Select>
       </Form.Group>
+
       <Container className="mt-3 mb-3">
         <Row className="gap-3">
-          {movies
+          {allMovies
             .filter(
               (item) =>
                 item.name.toLowerCase().includes(value.toLowerCase().trim()) &&
