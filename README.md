@@ -42,5 +42,6 @@ Bu proje, Kemal Sunal'ın filmlerini listeleyen ve detaylarını gösteren bir R
 - React Router DOM
 - React Bootstrap
 
+https://github.com/user-attachments/assets/9988d31d-60a9-4bb8-98cb-7a8108e975a4
 
 [Live](https://fy-kemal-sunal-movies.netlify.app/)
