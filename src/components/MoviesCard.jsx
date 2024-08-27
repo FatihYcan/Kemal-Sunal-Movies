@@ -12,8 +12,8 @@ const MoviesCard = ({ item }) => {
 
   return (
     <Card
-      className="border border-dark text-center"
-      style={{ width: "14rem", height: "100%" }}
+      className="border border-dark text-center x"
+      style={{ width: "17rem", height: "100%" }}
       key={id}
     >
       <Card.Img variant="top" src={image} height={"400px"} />

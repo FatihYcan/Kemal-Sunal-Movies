@@ -30,12 +30,12 @@ const MoviesDetails = () => {
     return (
       <Container className=" mt-3 mb-3 ">
         <Row>
-          <Col md={3}>
+          <Col md={5} lg={4} xl={3}>
             <Card>
               <Card.Img variant="top" src={movie?.image} />
               <ListGroup className="list-group-flush">
                 <ListGroup.Item className="d-flex ">
-                  <p className="w-50">Yönetmen: </p>{" "}
+                  <p className="w-50">Yönetmen: </p>
                   <span>{movie?.director}</span>
                 </ListGroup.Item>
                 <ListGroup.Item className="d-flex ">
@@ -72,7 +72,7 @@ const MoviesDetails = () => {
               </ListGroup>
             </Card>
           </Col>
-          <Col md={{ span: 8, offset: 1 }}>
+          <Col md={{ span: 7 }} lg={{ span: 7, offset: 1 }} xl={{ span: 8, offset: 1 }} >
             <Container className="bg-white">
               <Row className="text-center">
                 <h1>{movie?.name}</h1>
@@ -84,8 +84,6 @@ const MoviesDetails = () => {
               <Container className="text-center mt-2">
                 <h2>Filmin Bazı Sahneleri </h2>
                 <iframe
-                  width="560"
-                  height="315"
                   src={movie?.src}
                   title="YouTube video player"
                   frameBorder="0"

@@ -1,5 +1,4 @@
 import "./App.css";
-
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Home from "./pages/Home";

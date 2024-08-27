@@ -39,19 +39,21 @@ const MoviesList = () => {
   }, []);
 
   return (
-    <Container className="mt-3 ">
+    <Container className="mt-3">
       <Form.Control
         placeholder="Search Movie..."
         type="search"
-        className="w-25 m-auto "
+        className="form-input m-auto"
         onChange={(e) => setValue(e.target.value)}
         value={value}
       />
 
-      <Form.Group className="d-flex justify-content-around mt-3">
+      {/* d-flex justify-content-around */}
+
+      <Form.Group className="mt-3 form-group">
         <Form.Select
           aria-label="Film Türünü Seçiniz"
-          className="w-25 "
+          className="form-input"
           onChange={handleCategoryChange}
           value={selectedCategory || ""}
         >
@@ -64,7 +66,7 @@ const MoviesList = () => {
         </Form.Select>
         <Form.Select
           aria-label="Film Yılını Seçiniz"
-          className="w-25 "
+          className="form-input"
           onChange={handleYearChange}
           value={selectedYear || ""}
         >
@@ -76,8 +78,7 @@ const MoviesList = () => {
           ))}
         </Form.Select>
       </Form.Group>
-
-      <Container className=" mt-3 mb-3 ">
+      <Container className="mt-3 mb-3">
         <Row className="gap-3">
           {movies
             .filter(
